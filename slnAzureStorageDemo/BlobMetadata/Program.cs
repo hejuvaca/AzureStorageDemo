@@ -18,7 +18,7 @@ namespace BlobMetadata
         {
             //1. Asignar Metadata en Portal Azure
 
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=demosypfsacc;AccountKey=jCEE52WGiFL6Vp2DDAvjAiocwydP9/7yyxZwfSUfS7CpOaeVM7nNAY8bbclD6PjywJ0MEbXhui+ycDFYACjVwg==;EndpointSuffix=core.windows.net";
+            string connectionString = "";
             CloudStorageAccount account = CloudStorageAccount.Parse(connectionString);
             CloudBlobClient serviceClient = account.CreateCloudBlobClient();
 

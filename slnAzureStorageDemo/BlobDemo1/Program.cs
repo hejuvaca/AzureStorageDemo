@@ -14,7 +14,7 @@ namespace BlobDemo1
     {
         static async Task Main(string[] args)
         {
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=demosypfsacc;AccountKey=jCEE52WGiFL6Vp2DDAvjAiocwydP9/7yyxZwfSUfS7CpOaeVM7nNAY8bbclD6PjywJ0MEbXhui+ycDFYACjVwg==;EndpointSuffix=core.windows.net";
+            string connectionString = "";
             CloudStorageAccount account = CloudStorageAccount.Parse(connectionString);
             CloudBlobClient serviceClient = account.CreateCloudBlobClient();
 
