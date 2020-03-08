@@ -1,0 +1,31 @@
+Primera parte
+
+1. Abrir un BLOB
+2. Ver las propiedades de un BLOB y abrir desde el browser
+
+	https://demosypfsacc.blob.core.windows.net/micontenedor/Holamundo_0.txt
+
+3. Se tiene un error porque el nivel de acceso es Privado
+4. Cambiar el nivel de acceso a Nivel Blob y probar de nuevo.
+
+
+
+
+
+Segunda parte, ahora listaremos los que están en el contenedor.
+
+1. Abrir Postman
+2. Crear nueva REST
+3. Obtener ruta completa de las propiedades del contenedor
+
+	https://demosypfsacc.blob.core.windows.net/micontenedor
+
+4. Anexar: 
+
+	?restype=container&comp=list
+
+5. Probar y validar que no suceda error
+6. Si sucede error, cambiar nivel de acceso del Blob a "Container"
+7. Probar de nuevo
+
+

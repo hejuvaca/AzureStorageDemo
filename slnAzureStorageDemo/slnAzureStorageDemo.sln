@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Blob", "2. Blob", "{073E1D7B-0090-4775-B36D-B87C2048B87B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobDemo1", "BlobDemo1\BlobDemo1.csproj", "{04DBA451-18A5-492C-8F47-5FDE1D1F2774}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo1", "Demo1", "{84D33669-5677-4115-8929-E884487557E1}"
+	ProjectSection(SolutionItems) = preProject
+		CreateStorageAccount.ps1 = CreateStorageAccount.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo1", "Demo1", "{71AB74D5-11CD-4C46-87DD-0444D9F51A2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Table", "3. Table", "{1D7F73EC-7D5A-447B-AB3A-4E1377AC1985}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. StorageAccount", "1. StorageAccount", "{1BDAD0F8-BFB7-4AB0-BCB5-D98A9E654839}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo2", "Demo2", "{11B12932-C11A-4C2B-901C-C627CF25454F}"
+	ProjectSection(SolutionItems) = preProject
+		Instrucciones API.txt = Instrucciones API.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo3", "Demo3", "{354A75E7-8E73-4007-8E79-C00FC8FBC3C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobMetadata", "BlobMetadata\BlobMetadata.csproj", "{47319E8D-81D5-46AF-9A00-37ADD7EDD371}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04DBA451-18A5-492C-8F47-5FDE1D1F2774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04DBA451-18A5-492C-8F47-5FDE1D1F2774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04DBA451-18A5-492C-8F47-5FDE1D1F2774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04DBA451-18A5-492C-8F47-5FDE1D1F2774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47319E8D-81D5-46AF-9A00-37ADD7EDD371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47319E8D-81D5-46AF-9A00-37ADD7EDD371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47319E8D-81D5-46AF-9A00-37ADD7EDD371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47319E8D-81D5-46AF-9A00-37ADD7EDD371}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04DBA451-18A5-492C-8F47-5FDE1D1F2774} = {71AB74D5-11CD-4C46-87DD-0444D9F51A2D}
+		{84D33669-5677-4115-8929-E884487557E1} = {1BDAD0F8-BFB7-4AB0-BCB5-D98A9E654839}
+		{71AB74D5-11CD-4C46-87DD-0444D9F51A2D} = {073E1D7B-0090-4775-B36D-B87C2048B87B}
+		{11B12932-C11A-4C2B-901C-C627CF25454F} = {073E1D7B-0090-4775-B36D-B87C2048B87B}
+		{354A75E7-8E73-4007-8E79-C00FC8FBC3C9} = {073E1D7B-0090-4775-B36D-B87C2048B87B}
+		{47319E8D-81D5-46AF-9A00-37ADD7EDD371} = {354A75E7-8E73-4007-8E79-C00FC8FBC3C9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDB779E4-0611-4B21-A46B-6A6731E4858A}
+	EndGlobalSection
+EndGlobal
