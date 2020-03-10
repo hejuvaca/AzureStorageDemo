@@ -12,7 +12,7 @@ namespace BlobDemo1
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             string connectionString = "";
             CloudStorageAccount account = CloudStorageAccount.Parse(connectionString);

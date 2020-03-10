@@ -23,7 +23,7 @@ namespace BlobMetadata
             CloudBlobClient serviceClient = account.CreateCloudBlobClient();
 
             //Hacemos referencia el contenedor
-            var container = serviceClient.GetContainerReference("micontenedor"); 
+            var container = serviceClient.GetContainerReference("mycontainer"); 
 
             //Buscamos todos los atributos con FETCH y esperamos a que se complete la ejecución
             container.FetchAttributesAsync().Wait();
@@ -33,13 +33,14 @@ namespace BlobMetadata
             Console.WriteLine("Public access level: {0}", container.Properties.PublicAccess);
             Console.WriteLine("Last modified time in UTC: {0}", container.Properties.LastModified);
 
+            #region Demo Segunda Parte
             //Asignando Metadata nueva al contenedor
             container.Metadata.Add("tipoDocumentos", "Documentos de prueba");
             container.Metadata["categoria"] = "Demostraciones";
 
             //Asignación de la Metadata de nuevo al contenedor cpon SetMetadataAsync()
             container.SetMetadataAsync().Wait();
-
+            
             //Nuevamente Fetch y esperamos a que termine
             container.FetchAttributesAsync().Wait();
 
@@ -53,7 +54,9 @@ namespace BlobMetadata
             }
 
 
-            Console.WriteLine("Valide estos metadatos en el portal Azure");
+            //Console.WriteLine("Valide estos metadatos en el portal Azure"); 
+            #endregion
+
             Console.ReadLine();
 
             //NOTA: Si vuelve a ejecutar este código, recibirá un error indicando que los metadatos ya existen.
