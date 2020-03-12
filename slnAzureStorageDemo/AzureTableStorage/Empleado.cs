@@ -11,15 +11,14 @@ namespace AzureTableStorage.Entities
     {
         public string Nombre { get; set; }
         public string Apaterno { get; set; }
-
         public string Amaterno { get; set; }
 
         public Empleado(string nombre, string apaterno, string rowKey, string partitionKey)
         {
             Nombre = nombre;
             Apaterno = apaterno;
-            PartitionKey = partitionKey;
             RowKey = rowKey;
+            PartitionKey = partitionKey;
         }
 
         public Empleado()

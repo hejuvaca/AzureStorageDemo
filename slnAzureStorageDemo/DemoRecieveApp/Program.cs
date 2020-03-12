@@ -11,7 +11,7 @@ namespace DemoRecieveApp
     class Program
     {
         static string ConnectionString = "";
-        static string QueuePath = "";
+        static string QueuePath = "queueDemo";
         static void Main(string[] args)
         {
             //QueueClient: Es usada por las aplciaciones cliente para enviar y recibir mensajes de una cola de service bus

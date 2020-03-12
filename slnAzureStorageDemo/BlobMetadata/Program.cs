@@ -23,7 +23,7 @@ namespace BlobMetadata
             CloudBlobClient serviceClient = account.CreateCloudBlobClient();
 
             //Hacemos referencia el contenedor
-            var container = serviceClient.GetContainerReference("mycontainer"); 
+            var container = serviceClient.GetContainerReference("errores"); 
 
             //Buscamos todos los atributos con FETCH y esperamos a que se complete la ejecución
             container.FetchAttributesAsync().Wait();
@@ -40,7 +40,7 @@ namespace BlobMetadata
 
             //Asignación de la Metadata de nuevo al contenedor cpon SetMetadataAsync()
             container.SetMetadataAsync().Wait();
-            
+
             //Nuevamente Fetch y esperamos a que termine
             container.FetchAttributesAsync().Wait();
 
@@ -54,7 +54,7 @@ namespace BlobMetadata
             }
 
 
-            //Console.WriteLine("Valide estos metadatos en el portal Azure"); 
+            Console.WriteLine("Valide estos metadatos en el portal Azure"); 
             #endregion
 
             Console.ReadLine();

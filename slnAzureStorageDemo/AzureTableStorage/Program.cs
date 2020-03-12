@@ -61,20 +61,20 @@ namespace AzureTableStorage
             //Table service returns a maximum of 1000 entities in a single call to it. 
             //If there're more than 1000 entities available in your table, it returns a continuation token which can be used to fetch next set of entities
 
-            //TableContinuationToken token = null;
-            //var entities = new List<Empleado>();
-            //do
-            //{
-            //    var queryResult = table.ExecuteQuerySegmented(new TableQuery<Empleado>(), token);
-            //    entities.AddRange(queryResult.Results);
-            //    token = queryResult.ContinuationToken;
-            //} while (token != null);
+            TableContinuationToken token = null;
+            var entities = new List<Empleado>();
+            do
+            {
+                var queryResult = table.ExecuteQuerySegmented(new TableQuery<Empleado>(), token);
+                entities.AddRange(queryResult.Results);
+                token = queryResult.ContinuationToken;
+            } while (token != null);
 
 
-            //foreach (var item in entities)
-            //{
-            //    Console.WriteLine(item.Nombre);
-            //}
+            foreach (var item in entities)
+            {
+                Console.WriteLine(item.Nombre);
+            }
 
 
             Console.ReadKey();

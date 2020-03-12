@@ -11,7 +11,7 @@ namespace DemoSendApp
     class Program
     {
         static string ConnectionString = "";
-        static string queueName = "";
+        static string queueName = "queueDemo";
         static void Main(string[] args)
         {
             try
@@ -28,7 +28,7 @@ namespace DemoSendApp
                 byte[] bytes = Encoding.UTF8.GetBytes(json);
                 MemoryStream stream = new MemoryStream(bytes, writable: false);
                 BrokeredMessage message = new BrokeredMessage(stream) { ContentType = "application/json" };
-                queueCliente.Send(message);  
+                queueCliente.Send(message);
                 queueCliente.Close();
             }
             catch 

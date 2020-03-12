@@ -8,14 +8,14 @@ namespace QueueStorageDeomo
     class Program
     {
         // The string value is broken up for better onscreen formatting
-        private const string connectionString = "";
+        private const string connectionString = "UseDevelopmentStorage=true;";
         //private const string connectionString = "UseDevelopmentStorage=true";
 
         static async Task Main(string[] args)
         {
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
             CloudQueueClient queueClient = storageAccount.CreateCloudQueueClient();
-            CloudQueue queue = queueClient.GetQueueReference("myqueue2");
+            CloudQueue queue = queueClient.GetQueueReference("myqueue");
 
             if (args.Length > 0)
             {

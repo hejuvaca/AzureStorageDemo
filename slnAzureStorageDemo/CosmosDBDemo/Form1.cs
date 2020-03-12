@@ -18,8 +18,8 @@ namespace CosmosDBDemo
     public partial class Form1 : Form
     {
 
-        private const string ENDPOINTURL = "https://XXXXXXXXXX.documents.azure.com:443/";
-        private const string PRIMARYKEY = "==";
+        private const string ENDPOINTURL = "https://XXXXXXX.documents.azure.com:443/";
+        private const string PRIMARYKEY = "";
         private const string DATABASE = "EmpleadosDB";
         private const string COLLECTION = "EmpleadosCollection";
         private DocumentClient client;
